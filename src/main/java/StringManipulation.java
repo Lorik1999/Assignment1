@@ -16,7 +16,16 @@ class StringManipulation {
    * @return input text with the substring from start to the end of the string reversed
    */
   public static String reverseEnd(String text, int start) {
-    return("TODO");
+
+    String original = new String("");
+    for(int i = 0; i < start; i++){
+      original += text.charAt(i);
+    }
+    for(int i = text.length() - 1; i > start - 1; i--){
+      original += text.charAt(i);
+    }
+
+    return original;
   }
 
 }

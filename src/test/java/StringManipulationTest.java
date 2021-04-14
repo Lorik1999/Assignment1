@@ -24,7 +24,34 @@ class StringManipulationTest {
   @Test public void testEmpty() {
       assertEquals("", StringManipulation.reverseEnd("", 0));
   }
+  @Test public void testStringManipulationWithOneChar() {
+            String text = "a";
+            int start = 0;
+            String actual = StringManipulation.reverseEnd(text, start);
+            String expected = "a";
+            assertEquals(expected, actual);
+        }
+  @Test public void testStringManipulationWithMoreThanOneChar() {
+            String text = "HelloWorld";
+            int start = 3;
+            String actual = StringManipulation.reverseEnd(text, start);
+            String expected = "HeldlroWol";
+            assertEquals(expected, actual);
+  }
+    @Test public void testStringManipulationWithEvenString() {
+            String text = "Test";
+            int start = 2;
+            String actual = StringManipulation.reverseEnd(text, start);
+            String expected = "Tets";
+            assertEquals(expected, actual);
+    }
+    @Test public void testStringManipulationWithOddString() {
+            String text = "Familiarize";
+            int start = 7;
+            String actual = StringManipulation.reverseEnd(text, start);
+            String expected = "Familiaezir";
+            assertEquals(expected, actual);
+    }
 
-  // TODO
 
 }

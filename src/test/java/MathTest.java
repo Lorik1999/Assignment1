@@ -36,9 +36,28 @@ class MathTest {
   }
 
   // covers a < b, a = minint, b = maxint
-  // TODO
+  @Test
+  public void testALessThanBAminAndBmax(){
+    int a=Integer.MIN_VALUE;
+    int b=Integer.MAX_VALUE;
+    int actual= Math.max(a,b);
+    int expected= Integer.MAX_VALUE;
+    assertEquals(expected, actual );
+  }
 
   // covers a > b, a = maxint, b = minint
-  // TODO
+  @Test
+  public void testAGreaterThanBAmaxAndBmin(){
+    int a= Integer.MAX_VALUE;
+    int b= Integer.MIN_VALUE;
+    int actual= Math.max(a,b);
+    int expected= Integer.MAX_VALUE;
+    assertEquals(expected, actual);
+
+
+
+
+  }
+
 
 }
