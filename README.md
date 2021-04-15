@@ -1,8 +1,8 @@
 # KEN1520 Assignment 1
 
-* Your Student ID: i1234567
-* First Name: Albert
-* Last Name: Einstein
+* Your Student ID: i6249348
+* First Name: Laurence
+* Last Name: Manoukian
 
 ## How to Hand In Your Assignment
 
